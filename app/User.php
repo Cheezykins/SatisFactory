@@ -23,4 +23,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function repositories()
+    {
+        return $this->hasMany(Repository::class);
+    }
 }

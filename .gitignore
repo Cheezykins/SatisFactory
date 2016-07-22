@@ -5,3 +5,6 @@ Homestead.yaml
 Homestead.json
 .env
 /Vagrantfile
+.idea
+/_ide_helper.php
+.vagrant

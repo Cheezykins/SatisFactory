@@ -1,6 +1,6 @@
 <?php
 
-return [
+$appConfig = [
 
     /*
     |--------------------------------------------------------------------------
@@ -205,3 +205,10 @@ return [
     ],
 
 ];
+
+if ($appConfig['env'] === 'local')
+{
+    $appConfig['providers'][] = \Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class;
+}
+
+return $appConfig;
