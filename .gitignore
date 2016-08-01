@@ -8,3 +8,9 @@ Homestead.json
 .idea
 /_ide_helper.php
 .vagrant
+/resources/assets/bower/
+/public/js/vendor.js
+/public/js/vendor.js.map
+/public/css/app.css
+/public/css/app.css.map
+/public/fonts

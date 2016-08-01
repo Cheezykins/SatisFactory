@@ -54,4 +54,22 @@ class Repository extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function install()
+    {
+        $installation = new RepositoryInstallation();
+        $this->repository_installations()->save($installation);
+        $this->installation_count ++;
+        $this->save();
+    }
+
+    public function build_repositories()
+    {
+        return $this->hasMany(BuildRepository::class);
+    }
+
+    public function builds()
+    {
+        return $this->hasManyThrough(Build::class, BuildRepository::class);
+    }
 }

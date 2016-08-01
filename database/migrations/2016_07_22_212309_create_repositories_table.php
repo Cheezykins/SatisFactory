@@ -17,7 +17,7 @@ class CreateRepositoriesTable extends Migration
             $table->string('namespace');
             $table->string('name');
             $table->string('url');
-            $table->integer('installation_count')->unsigned(); // Denormalise for performance
+            $table->integer('installation_count')->unsigned()->default(0); // Denormalise for performance
             $table->integer('repository_type_id')->unsigned();
             $table->foreign('repository_type_id')->references('id')->on('repository_types');
             $table->integer('credential_id')->unsigned();

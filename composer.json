@@ -7,7 +7,8 @@
     "require": {
         "php": ">=5.6.0",
         "laravel/framework": "5.2.*",
-        "composer/satis": "@dev"
+        "composer/satis": "@dev",
+        "cheezykins/passgen": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

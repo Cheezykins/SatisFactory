@@ -1,0 +1,13 @@
+{
+  "name": "satisfactory",
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "patternfly": "^3.7.0",
+    "font-awesome": "^4.6.3"
+  },
+  "resolutions": {
+    "jquery": "^3.1.0",
+    "font-awesome": "^4.6.3"
+  }
+}
