@@ -55,6 +55,12 @@ class CreateBuildStatusesTable extends Migration
             'short_display_name' => 'Success',
             'code' => \App\BuildStatus::SUCCESS
         ]);
+
+        \App\BuildStatus::create([
+            'display_name' => 'No build has ever run',
+            'short_display_name' => 'Never',
+            'code' => \App\BuildStatus::NEVER
+        ]);
     }
 
     /**

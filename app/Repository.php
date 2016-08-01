@@ -32,6 +32,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\App\Repository whereUserId($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Repository whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\App\Repository whereUpdatedAt($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\BuildRepository[] $build_repositories
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Build[] $builds
  */
 class Repository extends Model
 {
