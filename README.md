@@ -1,5 +1,7 @@
 # SatisFactory
 
+![SatisFactory Logo](/externals/logo-github.png?raw=true "SatisFactory Logo")
+
 This project is intended to be a multi-user multi-tenant administration system for [composer/satis](https://github.com/composer/satis)
 
 It's very early and no real functionality is complete yet, but this will be fleshed out as I work on it.
