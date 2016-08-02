@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests;
-use Illuminate\Http\Request;
+use App\Build;
+use App\Repository;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 
 class RepoController extends Controller
 {
@@ -14,7 +15,15 @@ class RepoController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $view = [];
+        try {
+            $view['lastBuild'] = Build::getlatest();
+            $view['repositories'] = Repository::whereActive(1);
+        } catch (ModelNotFoundException $e) {
+            $view['error'] = $e->getMessage();
+        }
+
+        return view('home', $view);
     }
 
     public function show($id)

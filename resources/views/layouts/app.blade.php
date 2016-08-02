@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="layout-pf layout-pf-fixed">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +10,11 @@
     <!-- Fonts -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700" rel="stylesheet">
 
     <style>
-        body {
-            font-family: 'Lato';
-        }
+
+
 
         .fa-btn {
             margin-right: 6px;
