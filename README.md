@@ -1,4 +1,3 @@
-# SatisFactory
 
 ![SatisFactory Logo](/externals/logo-github.png?raw=true "SatisFactory Logo")
 
