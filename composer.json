@@ -8,7 +8,9 @@
         "php": ">=5.6.0",
         "laravel/framework": "5.2.*",
         "composer/satis": "@dev",
-        "cheezykins/passgen": "^1.0"
+        "cheezykins/passgen": "^1.0",
+        "pragmarx/google2fa": "^1.0",
+        "bacon/bacon-qr-code": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
